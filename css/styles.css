@@ -310,8 +310,8 @@ table {
   margin-top: 40px;
 }
 .pictureFrame {
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background-color: #fff;
+  border: 1px solid #ddd;
   padding: 3px;
 }
 .caret {
@@ -325,21 +325,21 @@ table {
   border-left: 4px solid transparent;
 }
 .borderGray {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 .boxShadow {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 .card {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 10px;
   margin-bottom: 16px;
   position: relative;
 }
 .lt-ie9 .card,
 .lt-ie8 .card {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 .IE .card {
   box-shadow: 0 0px 6px rgba(0, 0, 0, 0.5);
@@ -376,13 +376,13 @@ a.card {
 }
 .aDropdownWrapper ul ul {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: none;
   display: none;
   padding: 10px;
 }
 .aDropdownWrapper ul ul li {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
   padding: 5px 0;
 }
 .aDropdownWrapper ul ul li:first-child {
@@ -397,15 +397,15 @@ a.card {
 /*Table with blue th's*/
 .blueHeadingsTable {
   clear: both;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   border-collapse: separate;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
   margin-bottom: 10px;
 }
 .blueHeadingsTable th {
   background-color: #0f455f;
-  color: #ffffff;
+  color: #fff;
 }
 .blueHeadingsTable th {
   padding: 10px 0;
@@ -472,7 +472,7 @@ a.card {
 /*GeneralStyles*/
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #333333;
+  color: #333;
 }
 h2 {
   color: #0f455f;
@@ -482,22 +482,22 @@ h2 {
   background-color: #fcfcfc;
 }
 .graySection .aTitle {
-  border-color: #dddddd;
+  border-color: #ddd;
 }
 .graySection .aTitle span {
   background-color: #fcfcfc;
 }
 .graySection .btn {
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 .aTitle {
   letter-spacing: normal;
   text-align: center;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #eee;
   margin: 60px 0 10px;
 }
 .aTitle span {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 0 2%;
   position: relative;
   top: -20px;
@@ -522,14 +522,14 @@ img {
 }
 /* Custom Syles for Dynatable */
 #evenOddTable {
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   border-collapse: separate;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
   margin-bottom: 10px;
   width: 100%;
 }
 #evenOddTable th a {
-  color: #ffffff;
+  color: #fff;
   display: block;
 }
 #evenOddTable th {
@@ -546,19 +546,19 @@ img {
 }
 .simpleTable th {
   background-color: #0f455f;
-  color: #ffffff;
+  color: #fff;
 }
 .simpleTable td {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
 }
 .sortByWrapper {
   text-align: right;
 }
 .sortByWrapper span {
-  color: #ffffff;
+  color: #fff;
 }
 .btn {
-  background-color: #eeeeee;
+  background-color: #eee;
   border-radius: 20px;
   border: none;
   display: inline-block;
@@ -567,27 +567,27 @@ img {
   text-decoration: none;
 }
 .btn:hover {
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 .primaryBtn:hover {
   background-color: #082c41;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 .primaryBtn {
   text-transform: uppercase;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   background-color: #0f455f;
-  color: #ffffff;
+  color: #fff;
 }
 .aquaBtn {
   text-transform: uppercase;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   background-color: #56abb3;
-  color: #ffffff;
+  color: #fff;
 }
 .aquaBtn:hover {
-  color: #ffffff;
+  color: #fff;
   background: #082c41;
   text-decoration: none;
 }
@@ -596,11 +596,11 @@ img {
   padding: 4px 10px;
 }
 .btnDisabled {
-  color: #dddddd;
+  color: #ddd;
 }
 .btnDisabled:hover {
-  background-color: #eeeeee;
-  color: #dddddd;
+  background-color: #eee;
+  color: #ddd;
   text-decoration: none;
 }
 button.btn {
@@ -618,7 +618,7 @@ tr:target {
   background: #082c41;
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   font-size: 12px;
   opacity: 0;
@@ -667,7 +667,7 @@ tr:target {
 hr {
   clear: both;
   border: 0;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -677,10 +677,10 @@ hr.halfLightBlue {
 }
 input[type=text] {
   transition: all ease-in 150ms;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 input[type=text]:focus {
-  border: 1px solid #666666;
+  border: 1px solid #666;
 }
 .fullWidthTable {
   width: 100%;
@@ -794,7 +794,7 @@ th {
 }
 .showGrid {
   text-align: center;
-  background: url(../images/pickBg.jpg) bottom center no-repeat #eeeeee;
+  background: url(../images/pickBg.jpg) bottom center no-repeat #eee;
   background-attachment: fixed;
   margin-bottom: 12px;
 }
@@ -821,7 +821,7 @@ th {
   .highlightsWrapper .oneThird,
   .highlightsWrapper .oneFourth,
   .resourcesPage .oneHalf {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
     float: none;
     width: 100%;
     margin-bottom: 30px;
@@ -838,7 +838,7 @@ th {
   max-height: 800px;
 }
 #table_div {
-  /*arrows*/
+  /*pagination*/
 }
 #table_div table {
   font-size: 12px;
@@ -848,9 +848,16 @@ th {
   color: #fff;
   white-space: normal;
   background: #133d71;
+  padding: 10px .35em;
 }
 #table_div table th:first-child {
   width: 20px;
+}
+#table_div table th:nth-child(2) {
+  width: 60px;
+}
+#table_div table th:nth-child(4) {
+  width: 60px;
 }
 #table_div .google-visualization-table-div-page.gradient {
   background-color: #ddd;
@@ -863,6 +870,17 @@ th {
   height: 40px;
   width: 40px;
 }
+#table_div .google-visualization-table-sortind {
+  color: #fff;
+  float: right;
+}
+#table_div .unsorted .google-visualization-table-sortind {
+  display: inline-block;
+  opacity: .5;
+}
+#table_div .unsorted .google-visualization-table-sortind:after {
+  content: "\0025bc \0025b2";
+}
 #table_div .charts-custom-button-inner-box {
   border-style: solid;
   display: inline-block;
@@ -874,4 +892,11 @@ th {
 }
 #table_div .charts-custom-button-inner-box img {
   margin-top: 16px;
+}
+/*stringFilter*/
+#dashboard_div .google-visualization-controls-stringfilter {
+  padding: 10px 0;
+}
+#dashboard_div .google-visualization-controls-stringfilter .google-visualization-controls-label {
+  padding-top: 0;
 }

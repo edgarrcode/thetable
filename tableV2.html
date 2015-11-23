@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1.1", {packages:["table"]});
+      google.setOnLoadCallback(drawTable);
+
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('number', 'Rank');
+        data.addColumn('string', 'Institution');
+        data.addColumn('string', 'State');
+        data.addColumn('number', 'Median earnings');
+        data.addColumn('number', 'Expected earnings');
+        data.addColumn('number', 'Over/under');
+        data.addRows([
+[1, 'University of Colorado Denver', 'CO', {v:73800,f:'$73,800'},{v:47600,f:'$47,600'},{v:26200,f:'$26,200'}],
+[2, 'Georgetown University', 'DC', {v:83300,f:'$83,300'},{v:61800,f:'$61,800'},{v:21500,f:'$21,500'}],
+[3, 'University of the Pacific', 'CA', {v:66400,f:'$66,400'},{v:45700,f:'$45,700'},{v:20700,f:'$20,700'}],
+[4, 'Harvard University', 'MA', {v:87200,f:'$87,200'},{v:67000,f:'$67,000'},{v:20200,f:'$20,200'}],
+[5, 'Washington and Lee University', 'VA', {v:77600,f:'$77,600'},{v:60500,f:'$60,500'},{v:17100,f:'$17,100'}],
+[6, 'Stanford University', 'CA', {v:80900,f:'$80,900'},{v:63900,f:'$63,900'},{v:17000,f:'$17,000'}],
+[7, 'California State University-Bakersfield', 'CA', {v:48100,f:'$48,100'},{v:31700,f:'$31,700'},{v:16400,f:'$16,400'}],
+[8, 'Massachusetts Institute of Technology', 'MA', {v:91600,f:'$91,600'},{v:75900,f:'$75,900'},{v:15700,f:'$15,700'}],
+[9, 'Duke University', 'NC', {v:76700,f:'$76,700'},{v:61800,f:'$61,800'},{v:14900,f:'$14,900'}],
+[10, 'University of Pennsylvania', 'PA', {v:78200,f:'$78,200'},{v:63900,f:'$63,900'},{v:14300,f:'$14,300'}]
+            ]);
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+
+        table.draw(data, {
+          showRowNumber: true,
+          page: 'enable',
+          pageSize: 100,
+          height: '640px',
+          width: '100%'
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Scorecard Without Composition Peer</h2>
+      <hr>
+      <div class="theTableWrapper">
+          <div id="table_div"></div>
+      </div><!-- /theTableWrapper -->
+    </div><!-- /container -->
+    
+  </body>
+</html>
