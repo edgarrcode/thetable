@@ -1,0 +1,1104 @@
+@white: #fff;
+@blue: #0f455f;
+@blueHover: #082c41;
+@blueLight: #56abb3;
+@grayDark: #555;
+@grayDarkest: #333;
+@grayMed: #999;
+@gray: #ddd;
+@grayLight: #eee;
+@grayLightest: #fcfcfc;
+@linkBlue: #008cba;
+@linkBlueHover: #03556e;
+ol {
+  list-style-position: inside;
+  text-indent: 0;
+  li {
+    margin-bottom: 10px;
+  }
+}
+/*Mixins*/
+.sprite {
+  background: url(../images/sprite.png) no-repeat;
+}
+.downloadPolicyBtn {
+  background-color: #e6e6e6;
+  border: 1px solid @gray;
+  padding: 10px 0;
+}
+.transition {
+  transition: all ease-in 150ms;
+}
+.transitionSlowest {
+  transition: all ease-in 600ms;
+}
+.fontSmall {
+  font-size: 12px;
+}
+.fontMed {
+  font-size: 24px;
+}
+.fontLarge {
+  font-size: 36px;
+}
+.textDecorationNone {
+  text-decoration: none;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.italicSerif {
+  display: block;
+  font-family: Adobe Caslon Pro, times, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0 auto;
+  text-transform: lowercase;
+}
+.boxShadow {
+  box-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+.greenCard {
+  border: 1px solid @blueLight;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: 10px;
+  .greenCardHeader {
+    background-color: @blueLight;
+    color: @white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: -10px -10px 10px -10px;
+    padding: 10px;
+  }
+  p {
+    color: @grayDarkest;
+    .caption {
+      color: @blueLight;
+    }
+  }
+}
+.greenCard:hover {
+  text-decoration: none;
+}
+.breakColMobileMixin {
+  width: 100%;
+  margin-right: 0;
+}
+/*Navigation*/
+.navigation .nav {
+  .idNavDD {
+    min-width: 180px;
+  }
+  li a.agilvaxHeaderLogo {
+    padding: 6px 0;
+  }
+}
+.header.agilvaxLogoSmallScreen {
+  display: none;
+}
+@media (max-width: 989px) {
+  .navigation .nav li a.agilvaxHeaderLogo {
+    display: none;
+  }
+  .header.agilvaxLogoSmallScreen {
+    background-color: @blueHover;
+    display: block;
+    padding: 4px 0;
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+/*home*/
+.home {
+  .mainContent {
+    padding: 20px 0 30px;
+  }
+  .grayBg {
+    background-color: @grayLight;
+    padding: 30px 0;
+    .greenCard {
+      .center;
+      background-color: @white;
+    }
+  }
+  .mainContent3 {
+    padding: 30px 0;
+  }
+  .date, .readMore{
+    display: block;
+  }
+  .date {
+    font-style: italic;
+  }
+}
+/*-------- Agilvax Circles*/
+.circle {
+  border: 1px solid @blueLight;
+  border-radius: 50%;
+}
+.statsCircles {
+  .circleWrapper {
+    position: relative;
+  }
+  .circle {
+    .transition;
+    height: 160px;
+    margin: 0 auto;
+    position: relative;
+    width: 160px;
+    h2 {
+      .transition;
+      margin-top: 52px;
+      margin-bottom: 0
+    }
+    .cBottomInfo {
+      display: block;
+      padding: 0 30px;
+      line-height: 1;
+      font-size: 14px;
+    }
+    p {
+      margin-top: 0;
+    }
+  }
+  .circle:before {
+    border: 1px double @blueLight;
+    border-radius: 50%;
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+  }
+  .circleWrapper:hover {
+    .circle {
+      background-color: @blueLight;
+      color: @white;
+      h2 {
+        color: @white;
+      }
+    }
+    .circleText {
+      color: @grayDarkest;
+    }
+  }
+}
+/*PieChartCircle*/
+.statsCircles {
+  svg {
+    .circle;
+    .transition;
+    }
+  .circleWrapper:hover {
+    svg {
+      background-color: @blueLight;
+    }
+  }
+}
+.techPlatCircles {
+  margin-top: 20px;
+  overflow: auto;
+  position: relative;
+  .connector {
+    border-top: 1px solid @blueLight;
+    height: 1px;
+    margin-left: -37.5%;
+    position: absolute;
+    left: 50%; top: 90px;
+    width: 75%;
+    z-index: -1;
+  }
+  .circle {
+    background-color: @white;
+    height: 180px;
+    margin: 0 auto;
+    width: 180px; 
+    img {
+      display: block;
+      border-radius: 50%;
+      height: 160px;
+      margin: 10px auto;
+      width: 160px;
+    }
+  }
+  .tpDescription {
+    text-align: center;
+  }
+}
+@media(max-width:767px) {
+  .techPlatCircles {
+    .connector {
+      border-top: none;
+      border-left: 1px solid @blueLight;
+      height: auto;
+      margin-left: 0;
+      position: absolute;
+      left: 50px; top: 50px; bottom: 50px;
+      width: 1px;
+    }
+    .circle {
+      float: left;
+      height: 100px;
+      margin: 20px 0 0;
+      width: 100px; 
+      img {
+        height: 80px;
+        width: 80px;
+      }
+    }
+    .tpDescription {
+      margin: 50px 0 0 130px;
+      text-align: left;
+    }
+    .oneThird {
+      overflow: auto;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .ovarianCancer .greenCard {
+      min-height: 314px;
+  }
+  .breastCancer .greenCard {
+      min-height: 290px;
+  }
+  .lungCancer .greenCard {
+    min-height: 331px;
+  }
+  .malaria .greenCard {
+    min-height: 304px;
+  }
+  .dengue .greenCard {
+    min-height: 326px;
+  }
+  .rsv .greenCard {
+    min-height: 304px;
+  }
+  .nhLymphoma .greenCard {
+    min-height: 348px;
+  }
+}
+
+/*Tech advantages*/
+.techAdvCircles {
+  margin-top: 20px;
+  overflow: auto;
+  padding-top: 40px;
+  position: relative;
+  .connector {
+    border-top: 1px solid @blueLight;
+    height: 1px;
+    position: absolute;
+    left: 5%; top: 170px;
+    width: 50%;
+    z-index: -1;
+  }
+  .circle {
+    background-color: @white;
+    height: 260px;
+    margin: 0 auto;
+    width: 260px; 
+    img {
+      display: block;
+      border-radius: 50%;
+      height: 240px;
+      margin: 10px auto;
+      width: 240px;
+    }
+  }
+  .tpDescription {
+    text-align: center;
+  }
+  .selectionCircle {
+    border: 1px solid @blueLight;
+    border-radius: 50%;
+    position: absolute;
+    left: 195px; top:69px;
+    height: 60px;
+    width: 60px;
+    z-index: 2;
+  }
+  .selectionConnector {
+    .center;
+    border: 1px solid @blueLight;
+    border-bottom: 0;
+    position: absolute;
+    left: 227px; top: 15px;
+    height: 53px;
+    width: 64.45%;
+    z-index: 3;
+    .selectionText {
+      background: @white;
+      border: 1px solid @blueLight;
+      margin: -15px 0 0 -62px;
+      padding: 3px 10px;
+      position: absolute; 
+    }
+  }
+  .vlpCandidateWrapper {
+    position: relative;
+    z-index: 4;
+  }
+}
+.adv1,
+.adv2,
+.adv3 {
+  opacity: 0;
+}
+@media(min-width: 768px)and(max-width:1199px) {
+  .techAdvCircles {
+    width: 750px;
+    .circle {
+      height: 220px;
+      width: 220px;
+      img {
+        height: 200px;
+        width: 200px;
+      }
+    }
+    .selectionCircle {
+      left: 131px; top: 70px;
+      height: 42px; width: 42px;
+    }
+    .selectionConnector {
+      left: 152px;
+      top: 17px;
+      .selectionText {
+        margin-left: -65px;
+      }
+    }
+    .connector {
+      top: 150px;
+    }
+  }
+}
+@media(max-width:767px) {
+  .techAdvCircles {
+    .connector {
+      border-top: none;
+      border-left: 1px solid @blueLight;
+      height: 50px;
+      margin-left: 0;
+      position: absolute;
+      left: 46px; top: 150px;
+      width: 1px;
+    }
+    .circle {
+      float: left;
+      height: 90px;
+      margin: 20px 0 0;
+      width: 90px; 
+      img {
+        height: 80px;
+        width: 80px;
+        margin-top: 5px;
+      }
+    }
+    .tpDescription {
+      margin: 50px 0 0 130px;
+      text-align: left;
+    }
+    .selectionCircle {
+      left: 48px;
+      top: 72px;
+      height: 20px;
+      width: 20px;
+    }
+    .selectionConnector {
+      border-bottom: 1px solid @blueLight;
+      border-left: 0;
+      left: 70px;
+      top: 83px;
+      bottom: 45px;
+      height: auto;
+      width: 39px;
+      .selectionText {
+        .fontSmall;
+        transform: rotate(90deg);-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);
+        left: 53px;
+        top: 141px;
+      }
+    }
+    .vlpRandomPeptText {
+      margin-top: 30px;
+    }
+    .adv1,
+    .adv2,
+    .adv3 {
+      overflow: auto;
+    }
+  }
+}
+/*Agilvax Solution*/
+.AgilvaxSolution {
+  .center;
+  margin-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.AgilvaxSolution::before {
+  .center;
+  .transition;
+  background-color: @blueLight;
+  content:" ";
+  display: block;
+  height: 3px;
+  margin: -10px auto 0 auto;
+  top: 0;
+  width: 50%;
+}
+a.AgilvaxSolution:hover::before {
+  width: 100%;
+}
+/*About Page*/
+.about .greenCard {
+  .center;
+}
+
+/*Team*/
+.team {
+  background-color: @grayLightest;
+ .AgilvaxSolution {
+    .left;
+    color: @grayDarkest;
+  }
+  .teamMemberName {
+    color: @blue;
+    i {
+      display: block;
+      font-size: 14px;
+    }
+  }
+  .teamMemberTitle {
+    margin-top: 0;
+  }
+}
+.team .AgilvaxSolution {
+  margin-top: 0;
+}
+.team .AgilvaxSolution.theTeam {
+  min-height: 120px;
+  h3 {
+    margin-bottom: 0;
+  }
+}
+.team .AgilvaxSolution:hover {
+  .textDecorationNone;
+}
+.team .overlay {
+  .transition;
+  background-color: rgba(0,0,0,.8);
+  position: fixed;
+  top: 0; bottom: 100%;
+  left: 0; right: 0;
+  overflow: hidden;
+  z-index: 2;
+  .olContent {
+    background-color: @white;
+    margin: 60px auto 0;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+    .scrollableContent {
+      height: 300px;
+      overflow: scroll;
+    }
+    .teamMemberName {
+      margin-bottom: 0;
+    }
+    .teamMemberTitle {
+      font-weight: 600;
+    }
+    .closeOL {
+      .center;
+      .fontMed;
+      background-color: @white;
+      border: 1px solid @gray;
+      border-radius: 50%;
+      cursor: pointer;
+      position: absolute; top: -30px; right: -30px;
+      line-height: 60px;
+      height: 60px; width: 60px;
+    }
+  }
+}
+.team .overlay.active {
+  bottom: 0;
+  overflow: hidden;
+
+}
+@media(min-width: 767px)and(max-width: 991px) {
+.team .AgilvaxSolution {
+  min-height: 100px;
+}
+}
+@media(max-width: 767px) {
+  .team .overlay .olContent {
+    margin-top: 20px;
+    h2 {
+      margin-top: 0
+    }
+    hr {
+      margin-bottom: 0;
+      margin-top: 16px;
+    }
+    .closeOL {
+      top: 0; right: 0;
+      border-radius: 0;
+    }
+  }
+  .team .AgilvaxSolution.theTeam {
+    min-height: 0;
+  }
+}
+
+/*publications*/
+.publications .greenCard, .publications .card {
+  .textDecorationNone;
+  text-align: left;
+}
+
+/*Pipeline*/
+.pipelineTable {
+  th {
+    .center;
+    width: 16.66666666666666%;
+  }
+}
+.progressBar {
+  background-color: @gray;
+  border:1px solid @grayMed;
+  border-radius: 12px;
+  height: 24px;
+  overflow: hidden;
+  span.widthZero {
+    width: 0 !important;
+  }
+  span {
+    .transitionSlowest;
+    background-color: @blueLight;
+    border-radius: 0 12px 12px 0;
+    display: block;
+    height: 24px;
+  }
+  #hpvPB {
+    width: 62.5%;
+  }
+  #rsvPB {
+    width: 34%;
+  }
+  #denguePB {
+    width: 30%;
+  }
+  #malariaPB {
+    width: 62.5%;
+  }
+  #ovarianCancerPB {
+    width: 25%;
+  }
+  #nonHodLymphomaPB {
+    width: 12.5%;
+  }
+  #breastCancerPB {
+    width: 46%;
+  }
+  #melanomaPB {
+    width: 38%;
+  }
+  #lungCancerPB {
+    width: 38%;
+  }
+}
+/*News*/
+.newsArticle {
+  border-bottom: 1px solid @gray;
+  overflow: auto;
+  margin-top: 30px;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    a {
+      color: @blue;
+    }
+  }
+  .author {
+    margin: .5em 0;
+  }
+  .date {
+    font-style: italic;
+    margin: 0;
+  }
+  .pictureFrame {
+    float: left;
+    margin-right: 4%;
+    width: 24%;
+    img {
+      display: block;
+    }
+  }
+  .excerpt {
+    float: left;
+    width: 70%;
+  }
+}
+.newsArticle:last-child {
+  border-bottom: none;
+}
+.newsSingle {
+  .pageTitle {
+    background-image: none;
+    h1 {
+      color: @blue;
+      text-align: left;
+    }
+  }
+  .newsArticle {
+    border-bottom: 0;
+  }
+}
+
+/* ++++++++++++Newsletter Form*/
+.newsletterForm {
+  input[type=text],
+  input[type=email] {
+    padding: 6px 2%;
+  }
+  form {
+    text-align: left;
+  }
+}
+/*NewsPage Form */
+.newsPage .newsletterForm {
+  input[type=text],
+  input[type=email] {
+    padding: 6px 2%;
+    width: 94%;
+  }
+}
+@media (max-width: 767px) {
+  .newsPage .newsletterForm {
+    p {
+      margin: 10px 0 0;
+    }
+  }
+}
+/*Footer Form*/
+#footer {
+  .leftBorder {
+    border-left: 1px solid @blueLight;
+    padding-left: 10px;
+    min-height: 248px;
+  }
+  h4, p {
+    margin: 10px 0;
+  }
+}
+@media(max-width: 767px) {
+  #footer {
+    .leftBorder {
+      border-left: 0;
+      border-top: 1px solid @blueLight;
+      padding-left: 0;
+      padding-top: 20px;
+      min-height: 0;
+    }
+    .agilvaxLogoF {
+      .center;
+      width: 180px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.blueGradient {
+background: #036; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #0062c5 0%, #004890 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#0062c5), color-stop(100%,#004890)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #0062c5 0%,#004890 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', endColorstr='#004890',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+/*Header*/
+.departmentalLogin {
+  float: right;
+  font-size: 12px;
+  a {
+    padding: 10px;
+    border: 1px solid @linkBlue;
+    border-radius: 6px;
+  }
+  a:hover {
+    background-color: @linkBlue;
+    color: @white;
+    text-decoration: none;
+  }
+}
+
+/*HomeHighlights*/
+.hl {
+  position: relative;
+  .card {
+    color: @blue;
+    font-size: 14px;
+    display: block;
+    overflow: auto;
+    padding: 10px 10px 0 10px;
+    position: relative;
+    text-decoration: none;
+    min-height: 340px;
+  }
+  .hlIcon {
+    text-align: center;
+  }
+  ul {
+    text-align: left;
+    a:hover {
+      box-shadow: none;
+    }
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
+  h5 {
+    color: @blueLight;
+  }
+  .bottomLink {
+    position: absolute;
+    left: 0; bottom: 0; right: 0;
+  }
+}
+
+@media(min-width: 768px)and(max-width: 991px) {
+  .oneFourth.hl {
+    margin-right: 2%;
+    width: 49%;
+  }
+  .oneFourth.hl.gridLast,
+  .oneFourth.hl:nth-child(3) {
+    margin-right: 0;
+  }
+  .oneFourth.hl.even {
+    margin-right: 0;
+  }
+}
+@media(max-width: 767px) {
+  .highlightsWrapper .hl {
+    margin-bottom: 0;
+    margin-top: 12px;
+  }
+}
+
+/*Staff Directory Page*/
+.staffDirWrapper {
+  .card {
+    min-height: 90px;
+    h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  .highlightsWrapper {
+    .left;
+    h3 {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    a.sprite {
+      float: left;
+      margin-right: 10px;
+      margin-top: -5px;
+    }
+    a {
+      color: @blue;
+    }
+    .blueBlock {
+      top: 10px; bottom: 10px; left: 10px; right: 80%;
+    }
+    .blueBlockAfterContent {
+      padding-left: 5px;
+    }
+  }
+}
+@media (max-width: 990px) {
+  .staffDirWrapper {
+    .card {
+      h2 {
+        font-size: 18px;
+      }      
+    }
+  }
+}
+@media (max-width: 767px){
+  .staffDirWrapper .oneThird {
+    .breakColMobileMixin;
+  }
+}
+
+/*Business Process Guidelines*/
+.businessProcessGuidelinesHeading {
+  span {
+    display: inline-block;
+    width: 90%;
+  }
+}
+.expandCollapseWrapper {
+  background-color: @blue;
+  color: @white;
+  overflow: auto;
+  padding: 10px;
+  .expandCollapseNav {
+    float: right;
+    list-style: none;
+    margin: 0;
+    li {
+      float: left;
+      .btn {
+        background-color: transparent;
+        border: 1px solid @white;
+        cursor: pointer;
+        padding: 6px 10px;
+      }
+    }
+    li:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+@media(max-width: 767px) {
+  .expandCollapseWrapper .expandCollapseNav li .btn {
+    padding: 6px 6px;
+  }
+}
+/*Accordion ShowHide Classes*/
+.guidelinesSectionWrapper {
+  .gs-content {
+    height: 0px;
+    overflow: hidden;
+  }
+}
+.guidelinesSectionWrapper.showThisGSContent {
+  .gs-title {
+    .sprite;
+    background-position: -40px -2230px;
+  }
+  .gs-content {
+    height: auto;
+  }
+}
+.guidelinesSectionWrapper {
+  padding: 10px;
+  .gs-title {
+    .sprite;
+    .transition;
+    background-position: -40px -2160px;
+    cursor: pointer;
+    margin: 0;
+    padding-left: 30px;
+  }
+  h4 {
+    margin-bottom: 0;
+  }
+  ul {
+    margin: 8px 0 0;
+  }
+}
+
+/*Delegation Of Authority*/
+.container {
+  position: relative;
+}
+
+.delegationOFAuthToolbar {
+  background-color: @blue;
+  padding: 10px;
+  .btnMed {
+    margin-top: 6px;
+  }
+}
+#delOfAuthDropdown {
+  .boxShadow;
+  background-color: @white;
+  border: 1px solid @gray;
+  ul > li span {
+    display: block;
+    padding: 7px;
+  }
+  a {
+    display: block;
+  }
+}
+#delegationOfAuthorityTable{
+  th.regents, td.regents {width: 20%;}
+  th.delegate, td.delegate {width: 35%;}
+  th.date, td.date {width: 15%;}
+  th h2 {
+    display: inline;
+  }
+  td {
+    padding: 30px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  td.chapter {
+    text-align: center;
+  }
+}
+.fixedThead{
+    top:0;
+    position:fixed;
+    width:auto;
+    display:none;
+    border:none;
+  }
+@media (max-width: 767px) {
+  #delOfAuthDropdown ul li span {
+    font-size: 14px;
+    margin-right: 50px;
+  }
+  #delegationOfAuthorityTable {
+    font-size: 12px;
+    td {
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+  }
+  .fixedThead {
+  display: none!important;
+  }
+  .backToTop {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+
+/*State Reports*/
+@media(min-width: 767px) {
+  .stateReports {
+    .card {
+      min-height: 210px;
+    }
+  }
+}
+@media(min-width: 768px)and(max-width: 990px) {
+  .stateReports {
+    .card {
+      h3 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/*Contact*/
+.depContactWrapper {
+  background-color: @blue;
+  padding: 2%;
+  select {
+    width: 100%;
+  }
+}
+
+
+/* ---------------------------- 
+-------------------------------  SP&A Custom Styles
+---------------------------- */
+
+/*Contracts Procedures List*/
+.prevStrategicPlansList {
+  padding: 0 2px;
+  a {
+    .fontMed;
+    min-height: 80px;
+    color: @blue;
+  }
+  a:hover {
+    text-decoration: none;
+    color: @linkBlue;
+  }
+}
+@media (max-width: 767px){
+  .prevStrategicPlansList .oneThird{
+    .breakColMobileMixin;
+  }
+}
+
+/*Key Terms*/
+.ktDefinitionsWrapper {
+  h3 {
+    margin-bottom: 0;
+    margin-top: 24px;
+  }
+  h3 + p {
+    margin-top: 0;
+  }
+}
+/*Surveys Page*/
+.surveysPage {
+  .horizontalTabs {
+    .tab {
+      padding: 0 3%;
+      width: 94%;
+    }
+    .aTitle {
+      margin-top: 30px;
+    }
+  }
+}
+@media (max-width: 767px) {
+.horizontalTabs ul.tabsNav {
+  li a {
+      font-size: 10px;
+      max-width: 54px;
+      height: 72px;
+    }
+    li:last-child {
+      border-right: none;
+    }
+  }
+}
+/*SecretShopper*/
+.ssResultsCardsWrapper {
+  .card {
+    .center;
+    p{
+      .fontSmall;
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 767px) {
+.ssResultsCardsWrapper {
+    .oneFourth {
+      .breakColMobileMixin;
+    }
+  }
+}

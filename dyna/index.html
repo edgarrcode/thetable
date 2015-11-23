@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/jquery.dynatable.css">
+
+        <!-- DNN Head Tags -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="js/jquery.dynatable.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <table id="cewTable" class="blueHeadingsTable">
+                <thead>
+                    <tr>
+<th>ROW_NUM</th><th>Institution</th><th>State</th><th>Median earnings</th><th>Graduation rate</th><th>Rank based on median earnings</th><th>Expected earnings based on college's majors</th><th>Difference in expected earnings based on colleges' majors and actual earnings</th><th>Difference in expected earnings based on colleges' majors and actual earnings (rounded)</th><th>Rank based on major-adjusted earnings</th><th>Expected earnings based on colleges' academic preparation and graduate degree attainment</th><th>Difference in expected earnings based on colleges' academic preparation and graduate degree attainment</th><th>Difference in expected earnings based on colleges' academic preparation and graduate degree attainment (rounded)</th><th>Rank based on earnings adjusted for academic preparation and graduate degree attainment</th>
+                    </tr>
+                </thead>
+                <tbody>
+<tr><td>1</td><td>Alabama A & M University</td><td>AL</td><td>$31,400</td><td>31%</td><td>1288</td><td>$43,100</td><td>$11,680</td><td>$11,700</td><td>1351</td><td>$36,970</td><td>$5,570</td><td>$5,600</td><td>1236</td></tr>
+<tr><td>2</td><td>University of Alabama at Birmingham</td><td>AL</td><td>$40,300</td><td>51%</td><td>758</td><td>$44,700</td><td>$4,371</td><td>$4,400</td><td>1107</td><td>$44,772</td><td>$4,472</td><td>$4,500</td><td>1169</td></tr>
+<tr><td>3</td><td>Amridge University</td><td>AL</td><td>$38,100</td><td>29%</td><td>912</td><td>$31,700</td><td>$6,429</td><td>$6,400</td><td>220</td><td>$29,098</td><td>$9,002</td><td>$9,000</td><td>61</td></tr>
+<tr><td>4</td><td>University of Alabama in Huntsville</td><td>AL</td><td>$46,600</td><td>48%</td><td>359</td><td>$56,500</td><td>$9,915</td><td>$9,900</td><td>1328</td><td>$54,130</td><td>$7,530</td><td>$7,500</td><td>1304</td></tr>
+<tr><td>5</td><td>Alabama State University</td><td>AL</td><td>$27,800</td><td>26%</td><td>1353</td><td>$33,000</td><td>$5,202</td><td>$5,200</td><td>1169</td><td>$29,911</td><td>$2,111</td><td>$2,100</td><td>962</td></tr>
+<tr><td>6</td><td>The University of Alabama</td><td>AL</td><td>$42,400</td><td>67%</td><td>607</td><td>$46,500</td><td>$4,124</td><td>$4,100</td><td>1087</td><td>$47,804</td><td>$5,404</td><td>$5,400</td><td>1222</td></tr>
+<tr><td>7</td><td>Auburn University at Montgomery</td><td>AL</td><td>$34,800</td><td>29%</td><td>1147</td><td>$39,900</td><td>$5,055</td><td>$5,100</td><td>1161</td><td>$41,599</td><td>$6,799</td><td>$6,800</td><td>1287</td></tr>
+<tr><td>8</td><td>Auburn University</td><td>AL</td><td>$45,400</td><td>68%</td><td>421</td><td>$48,400</td><td>$3,000</td><td>$3,000</td><td>992</td><td>$52,050</td><td>$6,650</td><td>$6,700</td><td>1280</td></tr>
+<tr><td>9</td><td>Birmingham Southern College</td><td>AL</td><td>$41,900</td><td>63%</td><td>641</td><td>$41,500</td><td>$396</td><td>$400</td><td>670</td><td>$45,234</td><td>$3,334</td><td>$3,300</td><td>1091</td></tr>
+<tr><td>10</td><td>Concordia College Alabama</td><td>AL</td><td>$21,300</td><td>13%</td><td>1392</td><td>$30,900</td><td>$9,562</td><td>$9,600</td><td>1322</td><td>$29,860</td><td>$8,560</td><td>$8,600</td><td>1340</td></tr>
+<tr><td>11</td><td>Faulkner University</td><td>AL</td><td>$37,600</td><td>27%</td><td>955</td><td>$42,200</td><td>$4,591</td><td>$4,600</td><td>1123</td><td>$44,315</td><td>$6,715</td><td>$6,700</td><td>1283</td></tr>
+<tr><td>12</td><td>Huntingdon College</td><td>AL</td><td>$37,100</td><td>45%</td><td>991</td><td>$43,200</td><td>$6,055</td><td>$6,100</td><td>1212</td><td>$42,575</td><td>$5,475</td><td>$5,500</td><td>1228</td></tr>
+<tr><td>13</td><td>Jacksonville State University</td><td>AL</td><td>$35,100</td><td>30%</td><td>1132</td><td>$36,600</td><td>$1,489</td><td>$1,500</td><td>864</td><td>$35,369</td><td>$269</td><td>$300</td><td>765</td></tr>
+<tr><td>14</td><td>Judson College</td><td>AL</td><td>$30,700</td><td>39%</td><td>1308</td><td>$35,000</td><td>$4,285</td><td>$4,300</td><td>1099</td><td>$30,724</td><td>$24</td><td>$0</td><td>737</td></tr>
+<tr><td>15</td><td>University of West Alabama</td><td>AL</td><td>$33,800</td><td>33%</td><td>1205</td><td>$40,800</td><td>$7,009</td><td>$7,000</td><td>1252</td><td>$36,535</td><td>$2,735</td><td>$2,700</td><td>1032</td></tr>
+<tr><td>16</td><td>Miles College</td><td>AL</td><td>$27,200</td><td>19%</td><td>1359</td><td>$36,300</td><td>$9,119</td><td>$9,100</td><td>1308</td><td>$34,420</td><td>$7,220</td><td>$7,200</td><td>1299</td></tr>
+<tr><td>17</td><td>University of Mobile</td><td>AL</td><td>$37,800</td><td>46%</td><td>943</td><td>$36,300</td><td>$1,457</td><td>$1,500</td><td>555</td><td>$35,454</td><td>$2,346</td><td>$2,300</td><td>468</td></tr>
+<tr><td>18</td><td>University of Montevallo</td><td>AL</td><td>$35,100</td><td>46%</td><td>1132</td><td>$37,100</td><td>$1,982</td><td>$2,000</td><td>908</td><td>$35,512</td><td>$412</td><td>$400</td><td>785</td></tr>
+<tr><td>19</td><td>University of North Alabama</td><td>AL</td><td>$36,300</td><td>32%</td><td>1055</td><td>$39,100</td><td>$2,770</td><td>$2,800</td><td>972</td><td>$35,098</td><td>$1,202</td><td>$1,200</td><td>595</td></tr>
+<tr><td>20</td><td>Oakwood University</td><td>AL</td><td>$33,700</td><td>37%</td><td>1210</td><td>$39,300</td><td>$5,563</td><td>$5,600</td><td>1192</td><td>$37,029</td><td>$3,329</td><td>$3,300</td><td>1090</td></tr>
+                </tbody>
+            </table>
+        </div><!-- /container -->
+        <script>
+            $('#cewTable').dynatable();
+        </script>
+    </body>
+</html>
