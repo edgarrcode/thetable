@@ -834,13 +834,11 @@ th {
     border-bottom: none;
   }
 }
-.theTableWrapper {
-  max-height: 800px;
-}
 #table_div {
   /*pagination*/
 }
 #table_div table {
+  height: auto !important;
   font-size: 12px;
   table-layout: fixed !important;
 }
